@@ -1,0 +1,62 @@
+/**index.wxss**/
+
+.main-content {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 24rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.block-style {
+  width: 560rpx;
+  height: 80rpx;
+  font-size: 26rpx;
+  border-radius: 3px;
+  margin: 40rpx auto 0;
+}
+
+.form-control {
+  padding-left: 20rpx;
+  border: 1px solid #bebebe;
+  color: #333;
+}
+
+.form-group {
+  width: 560rpx;
+  margin: 30rpx auto 32rpx auto;
+  position: relative;
+}
+
+.message-tip {
+  font-size: 30rpx;
+  position: relative;
+}
+
+.changeWord {
+  position: absolute;
+  top:0;
+  right: 0;
+  color: #979bd0;
+}
+
+.btnUpload {
+  width: 580rpx;
+  border: 1px solid #979bd0;
+  color: #979bd0;
+  text-align: center;
+  position: relative;
+}
+
+.btn-middle {
+  width: 580rpx;
+  font-size: 30rpx;
+  background: #979bd0;
+  color: #fff;
+  text-align: center;
+}
+.imgBody{
+  width:640rpx;
+  height:1136rpx;
+}

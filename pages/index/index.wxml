@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+<view> -->
+<view>
+  <view class="main-content" hidden="{{isShowImg}}">
+    <view class="form-group">
+      <view class="message-tip">你的宣言
+        <view class="changeWord" catchtap="changeWord">换词</view>
+      </view>
+      <input type="text" class="form-control block-style" placeholder="最多十二个字" name="slogan1" bindchange="getSlogan1" maxlength="12"></input>
+      <input type="text" class="form-control block-style" placeholder="最多十二个字" name="slogan2" bindchange="getSlogan2" maxlength="12"></input>
+    </view>
+    <view class="form-group">
+      <text class="message-tip">你的高颜值照</text>
+      <button type="button" class="btnUpload block-style" bindtap="chooseimage">上传照片</button>
+      <button type="button" class="btn-middle block-style" bindtap="confirm">生成海报</button>
+    </view>
+  </view>
+  <view class="imgBody">
+    <canvas canvas-id="imgCanvas" style="width:100%;height:100%;" />
+  </view>
+  <view class="img-box" hidden="{{!isShowImg}}">
+    <image mode="scaleToFill" src="{{imagePath}}"></image>
+  </view>
+</view>
